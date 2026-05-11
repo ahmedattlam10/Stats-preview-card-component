@@ -8,7 +8,7 @@
     --accent-clr: hsl(277, 64%, 61%);
     --white-clr: hsl(0, 0%, 100%);
     --p-clr: hsla(0, 0%, 100%, 0.75);
-    --headingd-stats-clr: hsla(0, 0%, 100%, 0.6);
+    --heading-stats-clr: hsla(0, 0%, 100%, 0.6);
 
     --fs-p:0.9375rem;
 
@@ -83,25 +83,25 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    margin-bottom: 2.5rem;
+    margin: 0 0 2.5rem 0;
 }
 
-.stats > div{
+.stats > li{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-.stats > div > strong{
+.stats > li > strong{
     color: var(--white-clr);
     font-weight: var(--fw-bold);
     font-size: 1.5rem;
 }
 
-.stats > div > span{
+.stats > li > span{
     font-family: var(--ff-lexenddeca);
     font-weight: var(--fw-medium);
-    color: var(--headingd-stats-clr);
+    color: var(--heading-stats-clr);
     text-transform: uppercase;
     font-size: 0.7rem;
 }
@@ -110,7 +110,8 @@ body{
     .card{
         display: flex;
         flex-direction: row-reverse;
-        width: 70rem;
+        max-width: 70rem;
+        width: 100%;
     }
     .main-img, .content{
         width: 50%;
@@ -134,7 +135,7 @@ body{
     color: var(--p-clr);
     font-size: var(--fs-p);
     font-weight: var(--fw-medium);
-    margin-top: -4rem;
+    margin-top: 1rem 0 0;
     padding: 0px 4rem 0 0;
     line-height: 1.6;
     
@@ -144,24 +145,27 @@ body{
     flex-direction: row;
     align-items: center;
     gap: 4.7rem;
-    margin-bottom: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+    margin-top: 5rem;
     }
-    .stats > div{
+    .stats > li{
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
 
-    .stats > div > strong{
+    .stats > li > strong{
     color: var(--white-clr);
     font-weight: var(--fw-bold);
     font-size: 1.2rem;
 }
 
-    .stats > div > span{
+    .stats > li > span{
     font-family: var(--ff-lexenddeca);
     font-weight: var(--fw-medium);
-    color: var(--headingd-stats-clr);
+    color: var(--heading-stats-clr);
     text-transform: uppercase;
     font-size: 0.7rem;
 }
